@@ -1,0 +1,14 @@
+language: C#
+mode: .NET
+version:
+  - '10.0'
+version_regex:
+  Dockerfile: DEFAULT_DOCKER_REGEX
+  web.csproj: '<TargetFramework>net(.+)<\/TargetFramework>'
+framework: .NET
+framework_website: https://dot.net
+framework_flavor: AOT
+framework_version:
+  - '10'
+
+extended_warmup: true
